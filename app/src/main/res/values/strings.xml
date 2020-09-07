@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">PreVentaGps</string>
+    <string name="hint_username">Ingrese Usuario:</string>
+    <string name="hint_password">Contraseña:</string>
+    <string name="txtButtonLogin">Ingresar</string>
+    <string name="error_network">Conexión de red no disponible</string>
+    <string name="error_data">ERROR!!</string>
+    <string name="exito_data">Exito</string>
+    <string name="error_field_username_required">Ingrese Usuario</string>
+    <string name="error_field_password_required">Ingrese Clave</string>
+    <string name="error_invalid_password">Contraseña inválida</string>
+    <string name="error_invalid_username">Usuario incorrecto</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Fontello icons -->
+    <string name="fontello_logo">&#xe802;</string>
+    <string name="fontello_search">&#xe816;</string>
+    <string name="fontello_x_mark">&#xe81f;</string>
+    <string name="fontello_x_mark_masked">&#xe806;</string>
+    <string name="fontello_microfon">&#xe80f;</string>
+    <string name="fontello_user">&#xe81b;</string>
+    <string name="fontello_password">&#xe823;</string>
+    <string name="fontello_upload">&#xe81a;</string>
+    <string name="fontello_play">&#xe813;</string>
+    <string name="fontello_heart_empty">&#xe80b;</string>
+    <string name="fontello_heart_full">&#xe80a;</string>
+    <string name="fontello_drag_and_drop">&#xe821;</string>
+
+    <!-- Material Design Icons -->
+    <string name="material_icon_bike">&#xe915;</string>
+    <string name="material_icon_go">&#xea04;</string>
+    <string name="material_icon_sleep">&#xe9c2;</string>
+    <string name="material_icon_eat">&#xeac6;</string>
+    <string name="material_icon_play">&#xe831;</string>
+    <string name="material_icon_drink">&#xea08;</string>
+    <string name="material_icon_party">&#xe937;</string>
+    <string name="material_icon_shop">&#xe858;</string>
+    <string name="material_icon_account">&#xe800;</string>
+    <string name="material_icon_account_multiple">&#xe8dc;</string>
+    <string name="material_icon_message">&#xea12;</string>
+    <string name="material_icon_image_box">&#xe952;</string>
+    <string name="material_icon_video">&#xeb39;</string>
+    <string name="material_icon_clock">&#xe881;</string>
+    <string name="material_icon_star_outline">&#xeade;</string>
+    <string name="material_icon_star">&#xeadf;</string>
+    <string name="material_icon_share">&#xeac0;</string>
+    <string name="material_icon_plus_box">&#xea7f;</string>
+    <string name="material_icon_check">&#xe867;</string>
+    <string name="material_icon_undo">&#xeb2c;</string>
+    <string name="material_icon_friends">&#xe8d5;</string>
+    <string name="material_icon_email">&#xe99c;</string>
+    <string name="material_icon_password">&#xe9fa;</string>
+    <string name="material_icon_flag">&#xe96a;</string>
+    <string name="material_icon_city">&#xe878;</string>
+    <string name="material_icon_unfold_more">&#xeb2f;</string>
+    <string name="material_icon_home_variant">&#xe9bd;</string>
+    <string name="material_icon_home">&#xe9be;</string>
+    <string name="material_icon_hotels">&#xeae3;</string>
+    <string name="material_icon_date">&#xe848;</string>
+    <string name="material_icon_like">&#xeb03;</string>
+    <string name="material_icon_bookmark">&#xe921;</string>
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
+    <string name="permission_required_toast">Location permission is required for this demo.</string>
+
+
+    <!-- TextView related strings -->
+    <string name="typography1">Typography I</string>
+    <string name="typography2">Typography II</string>
+    <string name="typography3">Typography III</string>
+    <string name="material_design">Material design</string>
+    <string name="material_design_variation">Material design variation</string>
+    <string name="all_set_by_google_instructions_of_material_design">All set by Google instructions of Material Design</string>
+    <string name="lorem_ipsum_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="lorem_ipsum_short">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+    <string name="thiner_and_lighter_version">Thiner and lighter version of Material design</string>
+    <string name="thicker_and_darker_version">Thicker and darker version of Material design</string>
+    <string name="number_of_images">%d image(s)</string>
+    <string name="new_york">New York</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">E-mail</string>
+    <string name="country">Country</string>
+    <string name="city">City</string>
+    <string name="welcome">Welcome!</string>
+    <string name="undo_deletion">UNDO DELETION</string>
+    <string name="undo_deletion_travel">WOOHOO! &#160;&#160;\nI\'VE MADE IT!</string>
+    <string name="download">DOWNLOAD</string>
+    <string name="done">DONE</string>
+    <string name="error">ERROR</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="skip">SKIP</string>
+    <string name="raised">RAISED</string>
+    <string name="flat">FLAT</string>
+
+    <string name="title_1">CARD TITLE 1</string>
+    <string name="title_2">CARD TITLE 2</string>
+    <string name="title_3">CARD TITLE 3</string>
+    <string name="title_4">CARD TITLE 4</string>
+    <string name="text_1">conteido</string>
+    <string name="title_activity_pedido_out">PedidoOutActivity</string>
+    <string name="map_not_ready">Map is not ready yet</string>
+    <string name="mensajeAlertDialog">Este cliente tiene deuda vencida, solo se permitirá pasar pedidos a contado, o puede realizar la cobranza?</string>
+    <string name="mensajeAlertClienteDialog">El cliente ya se encuentra registrado !!!</string>
+    <string name="mensajeAlertCumple">Debe registrar la fecha de cumpleaños del cliente !!!</string>
+    <string name="mensajeAlertDeposito">Registrar el depósito</string>
+    <string name="mensajeAlertNoVencidoDialog">Este cliente tiene deuda aun no vencida,la cobranza es opcional</string>
+    <string name="mensajeAlertMayoristaDialog">Su canal es Mayorista,puede realizar su cobranza ahora</string>
+    <string name="mensajeClientePreAprobado">El cliente esta pendiente de aprobación , solo podra pasar pedidos a contado!!</string>
+    <string name="mensajeInformacionSugeridos">Ofrezca los articulos sugeridos en lista !!! </string>
+
+    <string name="versionApp">VERSION 2.1</string>
+    <string-array name="cabecera_tabla">
+        <item>Id de la fila</item>
+        <item>Valor</item>
+        <item>Valor 2</item>
+        <item>Valor 3</item>
+        <item>Valor 4</item>
+    </string-array>
+
+    <string-array name="status_local">
+        <item>A</item>
+        <item>I</item>
+
+    </string-array>
+    <string name="textoLinkManual"><a href="http://www.gps-inka.com/MANUAL.pdf">MANUAL</a></string>
+    <string name="txt_articulos"><u>ARTICULOS</u>.</string>
+    <string name="title_activity_bonificacion_item">BonificacionItemActivity</string>
+    <string name="title_activity_cobranza2">Cobranza2Activity</string>
+
+
+    <string name="txtMensajeServidorCaido"><b>En estos momentos no hay comunicacion con el servidor!! Porfavor intentelo en unos minutos!!</b>.</string>
+    <string name="txtMensajeConexion"><u>Porfavor verifique su conexión a internet</u>.</string>
+    <string name="textoAdvertenciaTelefono">Debe ingresar  un número correcto ya que  una persona  procederá a validarlo!!</string>
+
+    <string name="font_medium" translatable="false">fonts/Montserrat-Medium.ttf</string>
+    <string name="font_semibold" translatable="false">fonts/Montserrat-SemiBold.ttf</string>
+    <string name="font_bold" translatable="false">fonts/Montserrat-Bold.ttf</string>
+    <string name="font_regular" translatable="false">fonts/Montserrat-Regular.ttf</string>
+</resources>

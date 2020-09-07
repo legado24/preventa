@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/root_layout"
+    android:layout_height="wrap_content" android:orientation="vertical"
+    android:paddingTop="5sp"
+    tools:context=".fragments.ConsultaPedidoFragment" >
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="wrap_content" android:layout_gravity="center" android:gravity="center"
+        android:layout_height="wrap_content" android:paddingBottom="10sp">
+
+        <TextView android:text="hhhh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"  android:id="@+id/txtFecha"
+            style="@android:style/Widget.DeviceDefault.Light.Spinner" android:datePickerMode="spinner"   />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent" android:weightSum="1"
+        android:layout_height="wrap_content" android:gravity="center">
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent" android:layout_weight="0.5"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="LOCALIDAD:" android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent" android:layout_weight="0.5"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/spinnerVend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"   android:theme="@style/customtheme" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent" android:weightSum="1"
+        android:layout_height="wrap_content" android:gravity="center">
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent" android:layout_weight="0.5"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="ALMACEN:" android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent" android:layout_weight="0.5"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/spinnerAlmacenes" android:theme="@style/customtheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"     android:textSize="@dimen/sizeFormItem" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/spacing_middle"
+        android:layout_height="0dp" />
+
+    <LinearLayout android:id="@+id/layoutTotal"
+        android:layout_width="match_parent" android:gravity="center"
+        android:layout_height="wrap_content" android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/lblVentaDiaria"
+            android:text="VENTA DIARIA=" android:textSize="20dp"  android:paddingTop="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtVentaDiaria"
+            android:textSize="20dp"  android:paddingTop="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_mlarge" />
+    <!--<LinearLayout android:id="@+id/layoutCantidadTotal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" android:orientation="horizontal" android:padding="@dimen/activity_horizontal_margin">-->
+        <!--<TextView-->
+            <!--android:id="@+id/lblCantTotal"-->
+            <!--android:text="CANTIDAD=" android:textSize="20dp"  android:paddingTop="10sp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textStyle="bold"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtCant"-->
+            <!--android:textSize="20dp"  android:paddingTop="10sp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+    <LinearLayout android:id="@+id/layoutCantidadDet" android:layout_gravity="center"
+        android:layout_width="match_parent" android:weightSum="3"  android:layout_marginHorizontal="@dimen/activity_horizontal_margin_14"
+        android:layout_height="wrap_content" android:orientation="horizontal" >
+        <LinearLayout android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView android:text="____"
+                android:id="@+id/txtCantidadAprobados"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:id="@+id/lblCantidadAprobados"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/checkpedido"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView android:text="_____"
+                android:id="@+id/txtCantidadIngresados"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20dp" />
+            <ImageView
+                android:id="@+id/lblCantidadIngresados"
+                android:src="@drawable/clockpedido" android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <LinearLayout android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView android:text="____"
+                android:id="@+id/txtCantidadAnulados"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <ImageView
+                android:id="@+id/lblCantidadAnulados"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/anuladopedido"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/reciclador" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:padding="3dp" android:scrollbars="vertical" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <TextView
+        android:id="@+id/list_empty"
+        android:text="No Item" android:textSize="20dp"  android:paddingTop="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2sp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtCantidad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="llllllllllllllkkkkkkkkkkkkkm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descArticulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="mmmmmmmmmmmmmmmmmmmmmmmmmm ,"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/txtCantidad"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <ImageView
+        android:id="@+id/btnEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnEliminar"
+        app:layout_constraintStart_toEndOf="@+id/imagenTipo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.476"
+        app:srcCompat="@drawable/edititem"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/btnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnEditar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/deleteitem" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1495098" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imagenTipo"
+        android:layout_width="15dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditar"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79"  />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+
+<!--    android:orientation="horizontal"    android:clickable="true" android:background="?android:attr/selectableItemBackground">-->
+
+<!--    <LinearLayout android:orientation="vertical"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent"    android:layout_weight="0.5">-->
+<!--        <LinearLayout android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" android:orientation="horizontal" >-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/codArticulo"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+
+<!--                 />-->
+
+<!--        </LinearLayout>-->
+<!--         <LinearLayout android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" android:orientation="horizontal" >-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/descArticulo"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+
+
+
+
+<!--        <LinearLayout android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" android:orientation="horizontal" >-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtCantidad"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+
+<!--&lt;!&ndash;        <LinearLayout android:orientation="horizontal" android:layout_weight="2"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="match_parent">&ndash;&gt;-->
+<!--&lt;!&ndash;            <Button android:theme="@style/RaisedButtonDark" android:layout_weight="1" android:drawableRight="@drawable/deleteitem"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent" android:text="Eliminar"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content" android:id="@+id/btnEliminar"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <Button android:theme="@style/RaisedButtonDark" android:text="Editar"  android:layout_weight="1" android:drawableRight="@drawable/edititem"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content" android:id="@+id/btnEditar"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        </LinearLayout>&ndash;&gt;-->
+
+<!--        <LinearLayout android:orientation="horizontal" android:layout_weight="0.7"-->
+<!--            android:layout_width="match_parent" android:weightSum="1"-->
+<!--            android:layout_height="match_parent">-->
+<!--            <LinearLayout android:orientation="horizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent" android:layout_weight="0.5" android:layout_margin="2sp">-->
+
+<!--                <Button  android:drawableLeft="@drawable/edititem"  android:paddingRight="5sp" android:background="@android:color/transparent"-->
+<!--                    android:layout_width="match_parent" android:theme="@style/RaisedButtonDark"-->
+<!--                    android:layout_height="match_parent" android:id="@+id/btnEditar"-->
+<!--                    android:scaleType="centerInside" />-->
+
+<!--            </LinearLayout>-->
+<!--            <LinearLayout android:orientation="horizontal" android:layout_weight="0.5"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent" android:layout_margin="2sp">-->
+<!--                <Button  android:paddingRight="5sp"-->
+<!--                    android:drawableLeft="@drawable/deleteitem"  android:background="@android:color/transparent"-->
+<!--                    android:layout_width="match_parent" android:theme="@style/RaisedButtonDark"-->
+<!--                    android:layout_height="match_parent" android:id="@+id/btnEliminar"-->
+<!--                    android:scaleType="centerCrop" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+
+<!--        <View android:layout_marginTop="@dimen/activity_horizontal_margin"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="#000000"/>-->
+
+
+<!--    </LinearLayout>-->
+
+
+
+
+<!--</RelativeLayout>-->

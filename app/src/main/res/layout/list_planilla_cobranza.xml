@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+android:id="@+id/card_view"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+app:cardElevation="8dp" android:layout_marginBottom="8sp"
+card_view:cardCornerRadius="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+        android:id="@+id/heading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+
+        android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin_8"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView  android:textSize="14sp"
+                    android:layout_width="match_parent"  android:text="CODIGO"   android:textColor="@color/white"
+                    android:layout_height="wrap_content" android:id="@+id/txtCodCliente"/>
+                <TextView android:textColor="@color/white"
+                    android:textSize="14sp"   android:padding="@dimen/activity_horizontal_margin_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:text="-"/>
+
+                <TextView
+                    android:id="@+id/txtDescCliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginBottom="6dp"
+                    android:text="Light traffic on ss16"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <TextView android:layout_marginLeft="@dimen/activity_horizontal_margin_8"
+                android:id="@+id/txtDireccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDescCliente"
+                android:text="Light traffic on ss16"
+                android:textColor="@color/material_green_A100"
+                android:textSize="14sp" />
+
+            <TextView android:layout_marginLeft="@dimen/activity_horizontal_margin_8"
+                android:id="@+id/txtNumeroDoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Light traffic on ss16"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout android:id="@+id/contenedorClienteCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical" >
+
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:text="608"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/txtCodVendedor"/>
+                    <TextView android:text="-"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"  />
+                    <TextView android:text="608"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/txtDescVendedor"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_width="match_parent" android:weightSum="2"
+                    android:layout_height="match_parent" >
+                    <LinearLayout android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView android:textColor="@color/colorPrimary"
+                            android:layout_width="wrap_content" android:text="MONTO:"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent" android:text="monto"
+                            android:layout_height="wrap_content" android:id="@+id/txtMonto"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView android:textColor="@color/colorPrimary"
+                            android:layout_width="wrap_content" android:text="SALDO:"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content" android:text="saldo"
+                            android:layout_height="wrap_content" android:id="@+id/txtSaldo"/>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView android:textColor="@color/colorPrimary"
+                        android:layout_width="wrap_content" android:text="ESTADO:"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtEstado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"     android:textSize="@dimen/sizeFormItem" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

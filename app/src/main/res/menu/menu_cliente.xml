@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/jornada"
+        android:icon="@drawable/ic_autorenew_black_24dp"
+        android:title="INICIAR JORNADA" />
+
+
+    <item
+        android:id="@+id/onlyClientes"
+        android:title="ACTUALIZAR CLIENTES" />
+
+    <!--<item-->
+        <!--android:id="@+id/mapa" android:visible="false"-->
+        <!--android:icon="@drawable/ic_backup_black_24dp"-->
+        <!--android:title="MAPA DE CLIENTES" />-->
+
+
+    <item
+        android:id="@+id/action_logout"
+        android:title="CERRAR SESION"
+        app:showAsAction="never" />
+
+
+
+
+
+</menu>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent" android:fitsSystemWindows="true"
+android:paddingBottom="@dimen/activity_vertical_margin_4"
+android:paddingLeft="@dimen/activity_horizontal_margin_8"
+android:paddingRight="@dimen/activity_horizontal_margin_8" android:layout_margin="@dimen/activity_vertical_margin_4"
+android:paddingTop="0dp"  android:id="@+id/coordinatorLayout">
+
+
+   <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent" android:fitsSystemWindows="true"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            >
+
+
+ <LinearLayout android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+     <LinearLayout
+         android:id="@+id/contenedorAddDireccion"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+         <TextView
+             android:id="@+id/lblDireccFact"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" android:textSize="@dimen/sizeLabel"
+             android:text="DIRECCION:"
+             android:textColor="@color/oil"
+             android:textStyle="bold" />
+
+         <EditText
+             android:id="@+id/txtDireccFact"
+             android:layout_width="match_parent" android:theme="@style/customtheme"
+             android:layout_height="wrap_content" android:textSize="@dimen/sizeFormItem"
+
+             android:textColor="@color/tertiary"
+             />
+
+
+         <LinearLayout android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" android:weightSum="2">
+             <LinearLayout android:orientation="vertical"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" android:layout_weight="1">
+
+                 <TextView
+                     android:id="@+id/lblStatusLocal"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="ESTADO LOCAL:"
+                     android:textSize="@dimen/sizeLabel" android:textColor="@color/oil"
+                     android:textStyle="bold"/>
+                 <!-- dpto -->
+                 <Spinner
+                     android:id="@+id/statusLocal" android:textSize="@dimen/sizeFormItem"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" android:entries="@array/status_local"
+                     android:completionThreshold="1"  />
+
+             </LinearLayout>
+             <LinearLayout android:orientation="vertical"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" android:layout_weight="1">
+
+                 <TextView
+                     android:id="@+id/lblCoordenadas"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="COORDENADAS:.:"  android:textColor="@color/oil"
+                     android:textStyle="bold"
+                     android:textSize="@dimen/sizeLabel"/>
+                 <!-- tipocliente -->
+                 <EditText
+                     android:id="@+id/txtCoordenadas" android:enabled="false"
+                     android:layout_width="match_parent"  android:completionThreshold="1"
+                     android:layout_height="wrap_content" android:textSize="@dimen/sizeFormItem"
+                     android:layout_gravity="center" android:theme="@style/customtheme"/>
+                 />
+             </LinearLayout>
+         </LinearLayout>
+
+         <LinearLayout android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" android:layout_weight="1">
+
+             <TextView
+                 android:id="@+id/lblRutas"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="RUTAS.:"
+                 android:textSize="@dimen/sizeLabel" android:textColor="@color/oil"
+                 android:textStyle="bold"/>
+             <!-- dpto -->
+             <AutoCompleteTextView android:theme="@style/customtheme"
+                 android:id="@+id/spinnerDpto" android:textSize="@dimen/sizeFormItem"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:completionThreshold="1"  />
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <FrameLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <fragment
+                     android:id="@+id/mapaCliente"
+                     android:layout_width="match_parent"
+                     android:layout_height="200sp"
+                     class="com.google.android.gms.maps.SupportMapFragment" />
+
+             </FrameLayout>
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent" android:layout_weight="2"
+             android:layout_height="wrap_content" android:orientation="horizontal">
+             <Button android:id="@+id/btnRegistrarLocal"  android:text="Registrar" android:layout_weight="1"
+                 android:layout_width="wrap_content"  android:theme="@style/RaisedButtonDark"
+                 android:layout_height="wrap_content"  android:drawableRight="@drawable/guardar_local"/>
+             <Button android:id="@+id/btnCerrar"  android:text="Cerrar" android:layout_weight="1"
+                 android:layout_width="wrap_content"  android:theme="@style/RaisedButtonDark"
+                 android:layout_height="wrap_content"  android:drawableRight="@drawable/close"/>
+         </LinearLayout>
+
+     </LinearLayout>
+
+ </LinearLayout>
+
+</ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

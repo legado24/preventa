@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.legado.preventagps.view.kbv.KenBurnsView
+        android:id="@+id/ken_burns_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- We use dps for font size: we don't want our logo
+    to become larger if user has set larger text in global
+    settings. -->
+
+    <!--<com.legado.appclothesv1.font.FontelloTextView-->
+    <!--android:id="@+id/logo"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:alpha="0.0"-->
+    <!--android:text="@string/fontello_logo"-->
+    <!--android:textColor="@color/main_color_500"-->
+    <!--android:textSize="64dp"-->
+    <!--tools:ignore="SpUsage" />-->
+
+    <ImageView android:src="@drawable/logo_gps" android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:alpha="0.0"
+        android:text="@string/fontello_logo" android:background="@android:color/transparent"
+        android:textColor="@color/colorPrimary"
+        android:textSize="64dp"
+        tools:ignore="SpUsage" />
+    <TextView android:gravity="center" android:textSize="10sp"
+        android:layout_width="wrap_content" android:textStyle="bold"
+        android:layout_height="wrap_content" android:text="@string/versionApp"/>
+
+    <com.legado.preventagps.font.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:id="@+id/welcome_text"
+    style="@style/TextViewAppearance.Title1"
+    android:layout_below="@+id/logo" android:layout_centerInParent="true"
+    android:layout_marginBottom="100dp"
+    android:alpha="0.0"
+    android:text="GRUPO PERAMÁS SANCHEZ"
+    android:textColor="@color/primaryColor" />
+    <!--<com.legado.appclothesv2.font.RobotoTextView-->
+        <!--android:id="@+id/welcome_text"-->
+        <!--style="@style/TextViewAppearance.Headline2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/logo"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:alpha="0.0"-->
+        <!--android:text="@string/welcome"-->
+        <!--android:textColor="@color/main_color_500" />-->
+
+</RelativeLayout>

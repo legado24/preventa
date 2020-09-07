@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/bt_close"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/celular" />
+
+            <TextView android:id="@+id/txtDialogTitleTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" android:text="ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/editTextSizeLogin"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@android:color/white" />
+
+
+            <ImageButton
+                android:id="@+id/bt_cerrar"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                 app:srcCompat="@drawable/ic_close" />
+
+        </LinearLayout>
+
+<!--        <LinearLayout   android:gravity="center"-->
+<!--            android:layout_width="wrap_content" android:layout_gravity="center"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/bt_close"-->
+<!--                android:layout_width="?attr/actionBarSize"-->
+<!--                android:layout_height="?attr/actionBarSize"-->
+<!--                android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--                android:tint="@android:color/white"-->
+<!--                app:srcCompat="@drawable/celular" />-->
+
+<!--            <TextView android:id="@+id/txtDialogTitleTelefono"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center_vertical"-->
+
+<!--                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"-->
+<!--                android:textColor="@android:color/white" />-->
+
+
+<!--        </LinearLayout>-->
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"  />
+
+            <TextView android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="@string/textoAdvertenciaTelefono"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"  />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_large">
+
+                <EditText
+                    android:id="@+id/etNroTelefono"  android:inputType="phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese número de Teléfono"  />
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_large" />
+
+
+
+
+                <LinearLayout  android:gravity="center" android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatButton android:theme="@style/RaisedButtonDark"
+                        android:id="@+id/bt_continuar"
+                        android:drawableRight="@drawable/continuar_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="continuar" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_submit"
+                    android:drawableRight="@drawable/save"
+                    android:layout_width="wrap_content" android:theme="@style/RaisedButtonDark"
+                    android:layout_height="wrap_content"
+                     android:text="GUARDAR Y CONTINUAR" />
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

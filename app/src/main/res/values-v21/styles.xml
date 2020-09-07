@@ -1,0 +1,6 @@
+<resources>
+
+    <style name="SwitchTheme" parent="Theme.MaterialComponents.Light">
+        <item name="android:colorControlActivated">@color/colorPrimary</item>
+    </style>
+</resources>

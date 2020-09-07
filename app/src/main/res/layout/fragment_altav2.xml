@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical"
+    android:background="@color/background_color">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+                <EditText
+                    android:id="@+id/txtCodCliente"
+                    style="@style/TextInputEditTextStyle" android:inputType="number"
+                    android:theme="@style/customtheme"
+                    android:singleLine="false"  android:textSize="@dimen/sizeFormItem"
+                    />
+
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+            <LinearLayout
+                android:layout_width="match_parent" android:weightSum="1"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+
+                <RelativeLayout android:layout_weight="0.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/txtDniRuc"
+                        style="@style/TextInputEditTextStyle" android:inputType="number"
+                        android:theme="@style/customtheme"
+                        android:singleLine="false"  android:textSize="@dimen/sizeFormItem"
+                        />
+
+                    <TextView
+                        style="@style/TextInputLayoutStyle"
+                        android:text="DNI/RUC" />
+                </RelativeLayout>
+                <LinearLayout android:layout_weight="0.8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageButton android:id="@+id/btnConsultarDniRuc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:src="@drawable/ic_search"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+                <EditText android:enabled="false"
+                    android:id="@+id/txtDescCliente"
+                    style="@style/TextInputEditTextStyle"
+                    android:theme="@style/customtheme"
+                    android:singleLine="false"  android:textSize="@dimen/sizeFormItem"
+                    />
+
+                <TextView
+                    style="@style/TextInputLayoutStyle"
+                    android:text="Descripción cliente" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/contenedorDireccionRuc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+                <EditText
+                    android:id="@+id/txtDireccionFacturacionRuc"
+                    style="@style/TextInputEditTextStyle"
+                    android:singleLine="false"
+                    />
+
+                <TextView
+                    android:text="Direcc. Facturación"
+                    style="@style/TextInputLayoutStyle" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout android:id="@+id/contenedorDireccionDni"
+            android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/spacing_standard"
+
+                    >
+
+                    <Spinner
+                        android:id="@+id/spinnerDirFormato1"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dialog" />
+
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/spacing_standard"
+
+                    >
+
+                    <EditText style="@style/TextInputEditTextStyle"
+                        android:id="@+id/txtDireccion1" android:inputType="textCapSentences"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:textSize="@dimen/sizeFormItem"
+                        android:textColor="@color/tertiary"
+                        />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/spacing_standard"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/txtDireccion2" android:inputType="number"
+                        style="@style/TextInputEditTextStyle"
+                        />
+
+                    <TextView
+                        android:text="NRO."
+                        style="@style/TextInputLayoutStyle" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/spacing_standard"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/txtDireccion3"
+                        android:inputType="textCapSentences"
+                        style="@style/TextInputEditTextStyle"
+                        />
+
+                    <TextView
+                        android:text="MZ."
+                        style="@style/TextInputLayoutStyle" />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/spacing_standard"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/txtDireccion4"
+                        style="@style/TextInputEditTextStyle"
+                        />
+
+                    <TextView
+                        android:text="LT."
+                        style="@style/TextInputLayoutStyle" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/spacing_standard"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/txtDireccion5"
+                        android:inputType="textCapSentences"
+                        style="@style/TextInputEditTextStyle"
+                        />
+
+                    <TextView
+                        android:text="HU."
+                        style="@style/TextInputLayoutStyle" />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/spacing_standard"
+
+                    >
+
+                    <Spinner
+                        android:id="@+id/spinnerDirFormato2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/spacing_standard"
+
+                    >
+
+                    <EditText style="@style/TextInputEditTextStyle"
+                        android:id="@+id/txtDireccion6" android:inputType="textCapSentences"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:textSize="@dimen/sizeFormItem"
+                        android:textColor="@color/tertiary"
+                        />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+                <EditText
+                    android:id="@+id/txtReferencia" android:inputType="textCapSentences"
+                    style="@style/TextInputEditTextStyle"
+                    android:theme="@style/customtheme"
+                    android:singleLine="false"  android:textSize="@dimen/sizeFormItem"
+                    />
+
+                <TextView
+                    style="@style/TextInputLayoutStyle"
+                    android:text="Referencia" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+
+                <AutoCompleteTextView   android:textSize="@dimen/font_size_micro"
+                    android:id="@+id/spinnerDpto"  android:hint="INGRESE DEPARTAMENTO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"  android:drawableRight="@drawable/ic_close" />
+
+<!--                <TextView-->
+<!--                    style="@style/TextInputLayoutStyle"-->
+<!--                    android:text="Departamento :" />-->
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+
+                <AutoCompleteTextView  android:textSize="@dimen/font_size_micro"
+                    android:id="@+id/spinnerProv" android:hint="INGRESE PROVINCIA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"  android:drawableRight="@drawable/ic_close" />
+
+<!--                <TextView-->
+<!--                    style="@style/TextInputLayoutStyle"-->
+<!--                    android:text="Provincia :" />-->
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+
+                <AutoCompleteTextView  android:textSize="@dimen/font_size_micro"
+                    android:id="@+id/spinnerDist"
+                    android:layout_width="match_parent" android:hint="INGRESE DISTRITO"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"  android:drawableRight="@drawable/ic_close" />
+
+<!--                <TextView-->
+<!--                    style="@style/TextInputLayoutStyle"-->
+<!--                    android:text="Distrito :" />-->
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/spacing_standard"
+
+                    >
+
+                    <EditText android:maxLength="9"
+                        android:id="@+id/txtTelefono" android:inputType="number"
+                        style="@style/TextInputEditTextStyle"
+                        />
+
+                    <TextView
+                        android:text="Telefono Fijo"
+                        style="@style/TextInputLayoutStyle" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/spacing_standard"
+                    >
+
+                    <EditText
+                        android:id="@+id/txtCelular"
+                        android:inputType="number"
+                        style="@style/TextInputEditTextStyle"
+                        />
+
+                    <TextView
+                        android:text="Celular"
+                        style="@style/TextInputLayoutStyle" />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+                <EditText
+                    android:id="@+id/txtEmail" android:inputType="textEmailAddress" android:textAllCaps="true"
+                    style="@style/TextInputEditTextStyle"
+                    android:lines="2" />
+                <TextView
+                    android:text="Email"
+                    style="@style/TextInputLayoutStyle" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+                >
+
+                <Spinner
+                    android:id="@+id/spinnerGiroNegocio" android:spinnerMode="dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" style="@style/customtheme"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+                >
+                <Spinner
+                    android:id="@+id/spinnerTipoCliente"
+                    android:layout_width="match_parent" android:spinnerMode="dialog"
+                    android:layout_height="wrap_content"  style="@style/customtheme"
+                    />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+                <Spinner
+                    android:id="@+id/spinnerRuta" 
+                    android:layout_width="match_parent" android:spinnerMode="dialog"
+                    android:layout_height="wrap_content"  
+                    />
+
+
+
+<!--                <TextView-->
+<!--                    style="@style/TextInputLayoutStyle"-->
+<!--                    android:text="Rutas :" />-->
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+                <Spinner
+                    android:id="@+id/spinnerLp"
+                    android:layout_width="match_parent" android:spinnerMode="dialog"
+                    android:layout_height="wrap_content"   
+                    />
+
+<!--                <TextView-->
+<!--                    style="@style/TextInputLayoutStyle"-->
+<!--                    android:text="Lista de precios  :" />-->
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:background="@drawable/bg_ractangal"
+                android:backgroundTint="@color/white"
+                android:padding="@dimen/spacing_middle">
+
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_weight="2"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblSexo" android:textAppearance="@style/FontMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sexo:"
+                        android:textColor="@color/tertiary"
+                        android:textSize="@dimen/font_size_nano" />
+
+
+                    <RadioGroup
+                        android:id="@+id/opciones_sexo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio_masculino"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:checked="true"
+                            android:text="M" />
+
+                        <RadioButton
+                            android:id="@+id/radio_femenino"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:checked="false"
+                            android:text="F" />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/lblFechaNac"
+                        android:layout_width="match_parent" android:textAppearance="@style/FontMedium"
+                        android:layout_height="wrap_content" android:textSize="@dimen/font_size_nano"
+                        android:text="Cumpleaños :"
+                        android:textColor="@color/tertiary"
+                          />
+
+                    <TextView
+                        android:id="@+id/txtFechaNacimiento"
+                        style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:datePickerMode="spinner" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlUseCurrentLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:background="@drawable/bg_ractangal"
+                android:backgroundTint="@color/white"
+                android:padding="@dimen/spacing_middle">
+
+                <TextView android:id="@+id/txtGeolocalizar"
+                    android:textAppearance="@style/FontSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/ic_my_location"
+                    android:drawablePadding="@dimen/spacing_standard"
+                    android:drawableTint="@color/radiobuttonTint"
+                    android:gravity="center"
+                    android:text="Geolocalizar"
+                    android:textColor="@color/radiobuttonTint"
+                    android:textSize="@dimen/font_size_medium"
+                    tools:ignore="MissingPrefix" />
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"   android:layout_centerInParent="true"-->
+<!--                    android:layout_height="wrap_content" >-->
+<!--                  -->
+<!--                    <com.github.tonywills.loadingbutton.LoadingButton-->
+<!--                        android:id="@+id/btnCapturar"  android:background="@android:color/transparent"-->
+<!--                        android:layout_width="70sp"-->
+<!--                        android:layout_height="60sp" -->
+<!--                        app:buttonBackgroundTint="@color/colorPrimary"-->
+<!--                        app:loadingColor="@color/amber900">-->
+<!--                        <TextView android:text="Geolocalizar" android:layout_gravity="center"-->
+<!--                            android:layout_width="wrap_content" android:textSize="@dimen/font_size_micro"-->
+<!--                            android:layout_height="wrap_content" android:textAppearance="@style/FontSemiBold" />-->
+<!--                        <ImageView -->
+<!--                            android:id="@+id/imgMap"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="70sp"-->
+<!--                            android:src="@drawable/gps_img" />-->
+<!--                    </com.github.tonywills.loadingbutton.LoadingButton>-->
+
+<!--                </LinearLayout>-->
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+                <EditText
+                    android:id="@+id/txtCoordenadas" android:enabled="false"
+                    style="@style/TextInputEditTextStyle"
+                    android:lines="2" />
+                <TextView
+                    android:text="Coordenadas"
+                    style="@style/TextInputLayoutStyle" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MaterialButtonStyle.Filled"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:text="REGISTRAR CLIENTE" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"    android:clickable="true" android:background="?android:attr/selectableItemBackground">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"    android:layout_weight="0.5" >
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal" >
+            <TextView
+                android:text="Serie"  android:layout_height="wrap_content"
+                android:layout_width="wrap_content"  android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtSerie"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                 />
+
+        </LinearLayout>
+         <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Preimpreso:" android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPreImpreso"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Fecha Emision:" android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtFechaEmision"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Saldo:" android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSaldo"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Cliente:" android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCliente"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                 />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Monto Cobrado:" android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtMonto"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="ESTADO:" android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtEstado"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

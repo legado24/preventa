@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" android:background="@drawable/fondodegradado"
+    tools:context="com.legado.preventagps.activities.vendedor.LoginActivity">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/login_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:theme="@style/WhiteProgress"
+            android:visibility="gone" android:layout_centerInParent="true"/>
+        <LinearLayout android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" android:weightSum="1" android:padding="@dimen/padding_horizontal_login">
+            <TextView
+                android:layout_width="wrap_content" android:textColor="@color/primaryColor" android:layout_gravity="center"
+                android:layout_height="wrap_content" android:text="@string/versionApp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="0.6">
+
+                <ImageView android:id="@+id/logo_gps"
+                    android:layout_width="180dp"   android:layout_height="100dp"
+                    android:layout_marginBottom="24dp"  android:layout_centerInParent="true" android:background="@drawable/logo_gps" />
+
+                <!--<com.airbnb.lottie.LottieAnimationView android:id="@+id/animate"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--app:lottie_imageAssetsFolder="assets"-->
+                    <!--app:lottie_fileName="433-checked-done.json"-->
+
+                    <!--/>-->
+
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="0.4" android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"  android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/float_label_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:theme="@style/LoginTextField" app:passwordToggleTint="#FFF">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent" android:id="@+id/txtUsername" android:singleLine="true"
+                            android:layout_height="wrap_content" android:hint="@string/hint_username" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/float_label_password"
+                        android:layout_width="match_parent" android:theme="@style/LoginTextField"
+                        android:layout_height="wrap_content" app:passwordToggleEnabled="true" app:passwordToggleTint="#FFF">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent" android:id="@+id/txtPassword"
+                            android:layout_height="wrap_content" android:hint="@string/hint_password"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="textPassword"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <Button
+                        android:layout_width="match_parent" android:id="@+id/btnLogin" android:theme="@style/RaisedButtonDark"
+                        android:layout_height="wrap_content" android:text="@string/txtButtonLogin"/>
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content" android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent" android:gravity="center"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView android:textColor="@color/amber900"
+                    android:id="@+id/linkManual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textoLinkManual"/>
+                <TextView android:textColor="@color/amber900"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="@string/versionApp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:gravity="center"-->
+<!--    android:padding="10dp" xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:orientation="vertical">-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:background="@color/primaryColor">-->
+<!--        <com.airbnb.lottie.LottieAnimationView android:id="@+id/alert"  android:adjustViewBounds="true"-->
+<!--            android:layout_width="100dp" android:layout_centerInParent="true"-->
+<!--            android:layout_height="200dp" android:layout_gravity="center"-->
+<!--            app:lottie_imageAssetsFolder="assets"-->
+<!--            app:lottie_fileName="651-warn.json"-->
+<!--            />-->
+
+<!--        <TextView android:textAlignment="center" android:gravity="center" android:layout_gravity="center" android:layout_centerInParent="true"-->
+<!--            android:layout_width="wrap_content" android:textSize="16sp" android:textStyle="bold"  android:textColor="@color/white"-->
+<!--            android:id="@+id/txtMensajeInfo" android:layout_height="wrap_content" android:text="@string/mensajeAlertClienteDialog"/>-->
+
+<!--    </RelativeLayout>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <LinearLayout android:textAlignment="center" android:gravity="center"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" android:orientation="horizontal">-->
+<!--            <LinearLayout android:orientation="vertical"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="150sp">-->
+
+<!--                <LinearLayout android:weightSum="3"-->
+<!--                    android:layout_width="wrap_content" android:layout_gravity="center"-->
+<!--                    android:layout_height="wrap_content" android:orientation="vertical">-->
+<!--                    <LinearLayout android:orientation="horizontal"-->
+<!--                        android:layout_width="match_parent" android:layout_weight="1"-->
+<!--                        android:layout_height="match_parent">-->
+<!--                        <Button-->
+<!--                            android:id="@+id/btnActualizarCliente"-->
+<!--                            android:layout_width="match_parent" android:textSize="10sp"-->
+<!--                            android:layout_height="wrap_content" android:theme="@style/RaisedButtonDark"-->
+<!--                            android:text="Editar Cliente" android:drawableRight="@drawable/edit_cliente" />-->
+
+<!--                    </LinearLayout>-->
+<!--                    <LinearLayout android:visibility="gone" android:orientation="horizontal"-->
+<!--                        android:layout_width="match_parent" android:layout_weight="1"-->
+<!--                        android:layout_height="match_parent">-->
+<!--                        <Button-->
+<!--                            android:id="@+id/btnAddLocal"-->
+<!--                            android:layout_width="match_parent" android:textSize="10sp"-->
+<!--                            android:layout_height="wrap_content" android:theme="@style/RaisedButtonDark"-->
+<!--                            android:text="Agregar local" android:drawableRight="@drawable/new_local" />-->
+
+<!--                    </LinearLayout>-->
+<!--                    <LinearLayout android:layout_weight="1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent">-->
+<!--                        <Button android:theme="@style/RaisedButtonDark"-->
+<!--                            android:id="@+id/dismiss"-->
+<!--                            android:layout_width="match_parent" android:textSize="10sp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Cerrar"  android:drawableRight="@drawable/close"/>-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--</LinearLayout>-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@android:color/white"
+android:fitsSystemWindows="true"
+android:orientation="vertical">
+
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:id="@+id/alert"  android:adjustViewBounds="true"
+                    android:layout_centerInParent="true"
+                      android:layout_gravity="center"
+                    app:lottie_imageAssetsFolder="assets"
+                    app:lottie_fileName="651-warn.json"
+                    />
+
+        <TextView android:id="@+id/txtDialogTitleTelefono"
+            android:layout_width="wrap_content" android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1" android:text="@string/mensajeAlertClienteDialog"
+            android:gravity="center_vertical" android:textAlignment="center"
+            android:textSize="@dimen/font_size_nano"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:textColor="@android:color/white" />
+
+
+        <ImageButton
+            android:id="@+id/bt_cerrar"   android:textSize="@dimen/font_size_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
+
+    </LinearLayout>
+
+
+</com.google.android.material.appbar.AppBarLayout>
+
+<androidx.core.widget.NestedScrollView
+    android:id="@+id/nested_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:scrollingCache="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+
+<!--            <TextView android:textAlignment="center" android:gravity="center" android:layout_gravity="center"-->
+<!--                android:layout_width="wrap_content" android:textSize="@dimen/font_size_nano" android:textStyle="bold"  android:textColor="@color/tertiary"-->
+<!--                android:id="@+id/txtMensajeInfo" android:layout_height="wrap_content" android:text="@string/mensajeAlertClienteDialog"/>-->
+
+
+            <LinearLayout  android:gravity="center" android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnActualizarCliente" android:textSize="@dimen/font_size_nano"
+                    style="@style/MaterialButtonStyle.Filled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_standard_new"
+                     android:layout_marginEnd="@dimen/spacing_standard_new"
+                    android:text="EDITAR CLIENTE" />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#202F65</color>
+    <color name="colorPrimaryDark">#202F65</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="amber900">#ff6f00</color>
+    <color name="orange500">#FF9800</color>
+    <color name="white">#FFFFFF</color>
+    <color name="divider_color">@color/main_color_500</color>
+    <color name="background_color">#FCFDFD</color>
+    <color name="rojo">#ef4437</color>
+    <color name="main_color_500">@color/material_purple_500</color>
+    <color name="main_color_50">@color/material_purple_50</color>
+    <color name="main_color_100">@color/material_purple_100</color>
+    <color name="main_color_200">@color/material_purple_200</color>
+    <color name="main_color_300">@color/material_purple_300</color>
+    <color name="main_color_400">@color/material_purple_400</color>
+    <color name="main_color_600">@color/material_purple_600</color>
+    <color name="main_color_700">@color/material_purple_700</color>
+    <color name="main_color_800">@color/material_purple_800</color>
+    <color name="main_color_900">@color/material_purple_900</color>
+    <color name="main_color_A100">@color/material_light_yellow_A100</color>
+    <color name="main_color_A200">@color/material_light_yellow_A200</color>
+    <color name="main_color_A400">@color/material_light_yellow_A400</color>
+
+    <color name="main_color_grey_500">@color/material_grey_500</color>
+    <color name="main_color_grey_50">@color/material_grey_50</color>
+    <color name="main_color_grey_100">@color/material_grey_100</color>
+    <color name="main_color_grey_200">@color/material_grey_200</color>
+    <color name="main_color_grey_300">@color/material_grey_300</color>
+    <color name="main_color_grey_400">@color/material_grey_400</color>
+    <color name="main_color_grey_600">@color/material_grey_600</color>
+    <color name="main_color_grey_700">@color/material_grey_700</color>
+    <color name="main_color_grey_800">@color/material_grey_800</color>
+    <color name="main_color_grey_900">@color/material_grey_900</color>
+
+    <color name="oil">#333333</color>
+    <color name="tertiary">#455561</color>
+
+    <color name="background">#E8EAF6</color>
+    <color name="transparente">#00000000</color>
+
+
+    <color name="primaryColor">#f57c00</color>
+    <color name="primaryLightColor">#ffad42</color>
+    <color name="primaryDarkColor">#bb4d00</color>
+    <color name="secondaryColor">#ff6d00</color>
+    <color name="secondaryLightColor">#ff9e40</color>
+    <color name="secondaryDarkColor">#c43c00</color>
+    <!--<color name="primaryTextColor">#ffff8d</color>-->
+    <!--<color name="secondaryTextColor">#ffff8d</color>-->
+
+
+        <color name="textColorPrimary">#FFFFFF</color>
+        <color name="textColorSecondary">#FFFFFF</color>
+        <color name="commonColorWhite">#FFFFFF</color>
+
+        <color name="semi_white">#1B1B1D</color>
+        <color name="black">#FFFFFF</color>
+        <color name="view_color">#363638</color>
+        <color name="transparent">#00000000</color>
+        <color name="transparent_view_color">#1D4A90E2</color>
+
+        <color name="background_color_2">#2A2D31</color>
+
+        <color name="editText_background">#212123</color>
+        <color name="img_background">#F4F4F4</color>
+        <color name="tomato">#FF6347</color>
+        <color name="dots_color">#A5A5A5</color>
+        <color name="faceBooK_blue">#343B9D</color>
+        <color name="google_red">#CB3634</color>
+        <color name="twitter_blue">#358CC9</color>
+        <color name="editText_background_active">#212123</color>
+        <color name="cat_1">#FA5866</color>
+        <color name="cat_2">#14ffec</color>
+        <color name="cat_3">#ede68a</color>
+        <color name="cat_4">#5454c5</color>
+        <color name="cat_5">#a7d129</color>
+        <color name="cat_6">#22267b</color>
+        <color name="cat_7">#4DD6C8</color>
+        <color name="cat_8">#EB7B87</color>
+        <color name="sidebar_background">#212123</color>
+        <color name="favourite_background">#FFEBEC</color>
+        <color name="favourite_unselected_background">#ECECEC</color>
+        <color name="yellow">#FEBA39</color>
+        <color name="light_gray">#212123</color>
+        <color name="green">#66953A</color>
+        <color name="red">#F61929</color>
+        <color name="light_green">#81C049</color>
+        <color name="more_infoHeading_background">#212123</color>
+        <color name="more_infoValue_background">#2D2D30</color>
+        <color name="item_background">#1F1F22</color>
+        <color name="light_color_primary">#28282B</color>
+        <color name="light_grey">#212123</color>
+        <color name="checkbox_color">#DFDFDF</color>
+        <color name="itemText_background">#1F1F22</color>
+        <color name="track_green">#64B931</color>
+        <color name="track_yellow">#ECC134</color>
+        <color name="track_red">#F61929</color>
+        <color name="track_grey">#D3D3D3</color>
+        <color name="radiobuttonTint">#B881F8</color>
+        <color name="scratch_start_gradient">#e5e5e5</color>
+        <color name="scratch_end_gradient">#cccccc</color>
+        <color name="bottom_bar_color">#2A2D31</color>
+        <color name="item_background_common">#EFF3F6</color>
+        <color name="gray_80">#802A2D31</color>
+        <array name="rainbow">
+            <item>@color/red</item>
+            <item>@color/yellow</item>
+            <item>@color/green</item>
+        </array>
+
+
+</resources>

@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".fragments.CobranzaFragment"  android:fillViewport="true" android:layout_marginBottom="80sp">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/recicladorDocDeuda" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginBottom="60dp"
+                    android:scrollbarThumbVertical="@color/colorPrimary"
+                    android:scrollbarSize="7dp"
+                    android:padding="3dp" android:scrollbars="vertical" style="@style/Widget.AppCompat.Light.ListPopupWindow"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>
+

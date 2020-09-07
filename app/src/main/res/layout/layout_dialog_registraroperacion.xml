@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="10dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/primaryColor">
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/alert"  android:adjustViewBounds="true"
+            android:layout_width="100dp" android:layout_centerInParent="true"
+            android:layout_height="200dp" android:layout_gravity="center"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_fileName="651-warn.json"
+            />
+
+        <TextView android:textAlignment="center" android:gravity="center" android:layout_gravity="center" android:layout_centerInParent="true"
+            android:layout_width="wrap_content" android:textSize="16sp" android:textStyle="bold"  android:textColor="@color/white"
+            android:layout_height="wrap_content" android:text="@string/mensajeAlertDeposito"/>
+
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:fitsSystemWindows="true">
+    <LinearLayout android:textAlignment="center" android:gravity="center"
+        android:layout_width="match_parent" android:layout_margin="@dimen/activity_horizontal_margin_4"
+        android:layout_height="wrap_content" android:orientation="vertical">
+
+
+        <LinearLayout android:orientation="horizontal" android:weightSum="1"
+            android:layout_width="match_parent" android:layout_gravity="center" android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <LinearLayout android:orientation="horizontal" android:layout_margin="@dimen/activity_horizontal_margin_8"
+                android:layout_width="match_parent" android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/lblMontoCobrado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:textSize="@dimen/sizeLabel"
+                    android:text="Monto Cobrado:"
+                    android:textColor="@color/oil"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent" android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+                <EditText android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"  android:id="@+id/txtMontoCobrado"
+                    android:theme="@style/customtheme"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout android:orientation="horizontal" android:weightSum="1"
+            android:layout_width="match_parent" android:layout_gravity="center" android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <LinearLayout android:orientation="horizontal" android:layout_margin="@dimen/activity_horizontal_margin_8"
+                android:layout_width="match_parent" android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/lblMontoDeposito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:textSize="@dimen/sizeLabel"
+                    android:text="Monto deposito:"
+                    android:textColor="@color/oil"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent" android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+                <EditText android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"  android:id="@+id/txtMontoDeposito"
+                    android:theme="@style/customtheme"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout android:orientation="horizontal" android:weightSum="1"
+            android:layout_width="match_parent" android:layout_gravity="center" android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <LinearLayout android:orientation="horizontal" android:layout_margin="@dimen/activity_horizontal_margin_8"
+                android:layout_width="match_parent" android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/lblBanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:textSize="@dimen/sizeLabel"
+                    android:text="Banco:"
+                    android:textColor="@color/oil"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent" android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"  android:id="@+id/txtBanco"
+                    android:theme="@style/customtheme"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent" android:layout_gravity="center" android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText android:inputType="number" android:hint="INGRESE NUMERO DE OPERACION"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"  android:id="@+id/txtNroOperaacion"
+                    android:theme="@style/customtheme"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent" android:layout_gravity="center" android:gravity="center"
+        android:layout_height="wrap_content">
+        <Button  android:text="Registrar Deposito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnRegistrar"/>
+        <Button android:text="Cerrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnCerrar"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

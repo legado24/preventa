@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.navigation.NavigationView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_view_supervisor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:fitsSystemWindows="true"
+    android:layout_gravity="start" android:layout_marginLeft="-60dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+
+    <ScrollView
+        android:id="@+id/activity_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgapps"
+        tools:context="com.legado.preventagps.activities.supervisor.InicioSupervisorActivity">
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtDashboard" android:text="@string/versionApp"
+                    android:textSize="22sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView  android:layout_below="@id/txtDashboard" android:text="Menu Principal"
+                    android:layout_marginTop="2dp"
+                    android:textSize="14sp"
+                    android:textColor="#52BAFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout android:layout_margin="16dp"
+                    android:layout_width="match_parent" android:gravity="center" android:layout_below="@+id/txtDashboard"
+                    android:layout_height="wrap_content" android:orientation="horizontal">
+                    <TextView android:textColor="@color/amber900"
+                        android:id="@+id/linkManualDash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textoLinkManual"/>
+                    <TextView android:textColor="@color/amber900"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="@string/versionApp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+         <LinearLayout  android:weightSum="1" android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         android:weightSum="2">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menu0"
+            style="@style/categoriesCardViewButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_card"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imagen0"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ffvv" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_weight="1"
+                    android:text="MI FFVV"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menu1"
+            style="@style/categoriesCardViewButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_card"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imagen1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/cambiolp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:text="CAMBIAR LISTA DE PRECIOS"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+    <LinearLayout android:weightSum="1" android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:layout_weight="1" android:id="@+id/menu2" android:layout_height="wrap_content" android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"  style="@style/categoriesCardViewButtons"
+            android:layout_width="match_parent"  android:layout_columnWeight="1" android:background="@drawable/selector_card"
+            android:layout_rowWeight="1" app:cardElevation="6dp" app:cardCornerRadius="30dp" android:layout_margin="12dp">
+            <LinearLayout android:orientation="vertical"
+                android:padding="16dp" android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/newcliente"
+                    android:layout_height="50dp" android:layout_width="50dp"/>
+                <TextView android:layout_marginTop="12dp"
+                    android:textColor="@color/white" android:textAlignment="center"
+                    android:textSize="9sp"
+                    android:text="ALTA CLIENTE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</com.google.android.material.navigation.NavigationView>

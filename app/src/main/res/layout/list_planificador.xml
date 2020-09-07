@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+android:id="@+id/card_view"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+app:cardElevation="8dp"
+card_view:cardCornerRadius="2dp">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtNumeroDoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADANAQUE SANTOS ADRIAN"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/txtDescCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/txtNumeroDoc"
+        android:text="DNI43491434"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/txtDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDescCliente"
+        android:text="ALTO CASA BLANCA NRO 13"
+        android:textColor="@color/material_green_A100"
+        android:textSize="12sp" />
+        <LinearLayout android:id="@+id/ly" android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView  android:text="MAYO:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView  android:text="45.87"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView  android:text="JUNIO:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView  android:text="15.87"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView  android:text="JULIO:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView  android:text="159.87"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView  android:text="AGOSTO:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView  android:text="195.87"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView
+            android:id="@+id/scrollvertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" >
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollhorizontal"
+                android:scrollbars="horizontal" >
+
+                <TableLayout
+                    android:id="@+id/tabla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:stretchColumns="*" >
+
+                    <TableRow
+                        android:id="@+id/tableRowProv"
+                        android:layout_width="wrap_content" android:gravity="center"
+                        android:layout_height="match_parent" >
+
+                        <TextView android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="10dp"
+                            android:text="0153-KIMBERLY - CLARK PERU S.R.L"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+                    <TableRow android:gravity="center"
+                        android:id="@+id/tableRowCat"  android:layout_span="2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_table" >
+                        <TextView android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="10dp" android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="CAT"
+                            android:textSize="16sp" />
+                    </TableRow>
+                    <TableRow  android:weightSum="2"
+                        android:id="@+id/tableNomCategoria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_table" >
+                            <TableRow android:layout_weight="1" >
+                                <TextView android:layout_width="wrap_content"
+                                    android:paddingBottom="10dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="10dp"
+                                    android:text="ADULT"
+                                    android:textSize="16sp" android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:layout_height="wrap_content" />
+                            </TableRow>
+                        <TableRow  android:layout_weight="1" >
+                            <TextView android:layout_width="wrap_content"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="10dp"
+                                android:text="ADULT"
+                                android:textSize="16sp" android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_height="wrap_content" />
+                        </TableRow>
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="1dp"-->
+                        <!--android:layout_height="match_parent">-->
+                        <!--<View style="@style/Divider" />-->
+                        <!--</LinearLayout>-->
+                        <!--<TableRow  android:layout_span="1">-->
+                        <!--<TextView android:layout_width="wrap_content"-->
+                            <!--android:paddingBottom="10dp"-->
+                            <!--android:paddingLeft="5dp"-->
+                            <!--android:paddingRight="5dp"-->
+                            <!--android:paddingTop="10dp"-->
+                            <!--android:text="FAMILY"-->
+                            <!--android:textColor="@color/white"-->
+                            <!--android:textSize="16sp"-->
+                            <!--android:layout_height="wrap_content" />-->
+                        <!--</TableRow>-->
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+
+            </HorizontalScrollView>
+
+        </ScrollView>
+
+        </LinearLayout>
+</androidx.cardview.widget.CardView>

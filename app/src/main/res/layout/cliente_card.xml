@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/tools"
+    android:focusable="false" android:layout_margin="@dimen/activity_horizontal_margin_14"
+    android:focusableInTouchMode="false"
+    android:clickable="true"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout android:id="@+id/contenedorClienteCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout android:layout_width="match_parent"  android:weightSum="1"
+            android:layout_height="match_parent"  android:minHeight="35sp" android:orientation="horizontal" >
+
+            <LinearLayout android:orientation="vertical" android:layout_weight="0.4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"  android:weightSum="1">
+<!--                <LinearLayout android:orientation="horizontal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent" android:layout_weight="0.8">-->
+<!--                    <TextView android:textStyle="bold"-->
+<!--                        android:layout_width="match_parent" android:text="4785"-->
+<!--                        android:layout_height="wrap_content"  android:id="@+id/txtSecuencia"/>-->
+<!--                </LinearLayout>-->
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:layout_weight="0.8">
+                    <TextView android:textStyle="bold"
+                        android:layout_width="match_parent" android:text="4785"
+                        android:layout_height="wrap_content"  android:id="@+id/txtCodCliente"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_width="match_parent"  android:layout_weight="0.2"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent" android:text="dLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXVVVVV"
+                        android:layout_height="wrap_content"  android:id="@+id/txtDescripcion"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:layout_weight="0.8">
+                    <TextView android:textStyle="bold"
+                        android:layout_width="match_parent" android:text="4785"
+                        android:layout_height="wrap_content"  android:id="@+id/txtDireccion"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:layout_weight="0.8">
+                    <TextView android:textStyle="bold"
+                        android:layout_width="wrap_content" android:text="TELEFONO:"
+                        android:layout_height="wrap_content"  android:textColor="@color/material_grey_500"/>
+                    <TextView android:textStyle="bold"
+                        android:layout_width="wrap_content" android:text="____________________"
+                        android:layout_height="wrap_content"  android:id="@+id/txtTelefono"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_weight="0.6"
+                android:layout_width="match_parent" android:weightSum="3"
+                android:layout_height="match_parent" >
+                <LinearLayout android:orientation="horizontal" android:id="@+id/llVerGeo"
+                    android:layout_width="match_parent"  android:visibility="gone"
+                    android:layout_height="match_parent" android:layout_weight="1">
+                    <com.github.tonywills.loadingbutton.LoadingButton
+                        android:id="@+id/btnVerGeo"
+                        android:layout_width="match_parent"  android:background="@android:color/transparent"
+                        android:layout_height="match_parent" android:layout_gravity="center"
+                        app:buttonBackgroundTint="@color/colorPrimary"
+                        app:loadingColor="@color/amber900"
+                        style="@style/Widget.AppCompat.Button"
+                        card_view:buttonBackgroundTint="@color/colorPrimary">
+                        <ImageView android:id="@+id/imgVerGeo"  android:background="@android:color/transparent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" android:src="@drawable/ver_mapa"
+                            android:scaleType="fitCenter" />
+                    </com.github.tonywills.loadingbutton.LoadingButton>
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:visibility="gone"
+                    android:layout_width="match_parent" android:id="@+id/llGeolocalizar"
+                    android:layout_height="match_parent" android:layout_weight="1">
+                    <com.github.tonywills.loadingbutton.LoadingButton
+                        android:id="@+id/btnGeolocalizar"
+                        android:layout_width="match_parent"  android:background="@android:color/transparent"
+                        android:layout_height="match_parent" android:layout_gravity="center"
+                        app:buttonBackgroundTint="@color/colorPrimary"
+                        app:loadingColor="@color/amber900"
+                        style="@style/Widget.AppCompat.Button"
+                        card_view:buttonBackgroundTint="@color/colorPrimary">
+                        <ImageView android:id="@+id/imgGeo"  android:background="@android:color/transparent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" android:src="@drawable/gps_img"
+                            android:scaleType="fitCenter" />
+                    </com.github.tonywills.loadingbutton.LoadingButton>
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:layout_weight="1">
+
+
+                    <com.github.tonywills.loadingbutton.LoadingButton
+                        android:id="@+id/btnPreventa"
+                        android:layout_width="match_parent"  android:background="@android:color/transparent"
+                        android:layout_height="match_parent" android:layout_gravity="center"
+                        app:buttonBackgroundTint="@color/colorPrimary"
+                        app:loadingColor="@color/amber900"
+
+                        style="@style/Widget.AppCompat.Button"
+                        card_view:buttonBackgroundTint="@color/colorPrimary">
+                        <ImageView android:id="@+id/img1"  android:background="@android:color/transparent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" android:src="@drawable/preventa_cliente"
+                            android:scaleType="fitCenter" />
+
+                    </com.github.tonywills.loadingbutton.LoadingButton>
+
+
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.github.tonywills.loadingbutton.LoadingButton
+                        android:id="@+id/btnNoPedido"  android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:buttonBackgroundTint="@color/colorPrimary"
+                        app:loadingColor="@color/amber900"
+
+                        style="@style/Widget.AppCompat.Button"
+                        card_view:buttonBackgroundTint="@color/colorPrimary">
+                        <ImageView android:id="@+id/img2"  android:background="@android:color/transparent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" android:src="@drawable/motivo_nopedido"
+                            android:scaleType="fitCenter" />
+
+                    </com.github.tonywills.loadingbutton.LoadingButton>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

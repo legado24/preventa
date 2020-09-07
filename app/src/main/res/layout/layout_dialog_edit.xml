@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="vertical"  style="@style/Base.DialogWindowTitle.AppCompat">
+
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent" android:weightSum="2"
+        android:layout_height="wrap_content">
+        <TextView android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="CANTIDAD:"/>
+
+        <EditText android:layout_weight="1"
+            android:id="@+id/txtCantidadEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal" android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="DISPONIBLE CANAL:"/>
+
+        <EditText android:layout_weight="1"
+            android:id="@+id/txtDisponibleEdit" android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"  android:inputType="number"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actualizar" />
+        <Button
+            android:id="@+id/dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cerrar" />
+    </LinearLayout>
+
+</LinearLayout>

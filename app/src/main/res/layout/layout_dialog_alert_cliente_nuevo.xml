@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/primaryColor">
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/alert"  android:adjustViewBounds="true"
+            android:layout_width="100dp" android:layout_centerInParent="true"
+            android:layout_height="200dp" android:layout_gravity="center"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_fileName="651-warn.json"
+            />
+        <TextView android:textAlignment="center" android:gravity="center" android:layout_gravity="center" android:layout_centerInParent="true"
+            android:layout_width="wrap_content" android:textSize="16sp" android:textStyle="bold"  android:textColor="@color/white"
+            android:layout_height="wrap_content" android:text="@string/mensajeClientePreAprobado"/>
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout android:textAlignment="center" android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="150sp">
+
+                <LinearLayout android:weightSum="3"
+                    android:layout_width="wrap_content" android:layout_gravity="center"
+                    android:layout_height="wrap_content" android:orientation="vertical">
+                    <LinearLayout android:orientation="horizontal"
+                        android:layout_width="match_parent" android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <Button
+                            android:id="@+id/continuar"
+                            android:layout_width="match_parent" android:textSize="10sp"
+                            android:layout_height="wrap_content" android:theme="@style/RaisedButtonDark"
+                            android:text="Continuar" android:drawableRight="@drawable/continuar_img" />
+
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <Button android:theme="@style/RaisedButtonDark"
+                            android:id="@+id/dismiss"
+                            android:layout_width="match_parent" android:textSize="10sp"
+                            android:layout_height="wrap_content"
+                            android:text="Cerrar"  android:drawableRight="@drawable/close"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp"
+    android:fitsSystemWindows="true"
+    tools:context=".fragments.CarritoFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recicladorPedido"
+        style="@style/Widget.AppCompat.Light.ListPopupWindow"
+        android:layout_width="406dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="60dp"
+        android:padding="3dp"
+        android:scrollbarSize="7dp"
+        android:scrollbarThumbVertical="@color/colorPrimary"
+        android:scrollbars="vertical"
+        fab:layout_constraintBottom_toTopOf="@+id/txtMonto"
+        fab:layout_constraintEnd_toEndOf="parent"
+        fab:layout_constraintHorizontal_bias="0.4"
+        fab:layout_constraintStart_toStartOf="parent"
+        fab:layout_constraintTop_toTopOf="parent"
+        fab:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtMonto"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="120dp"
+        android:gravity="center"
+        android:paddingRight="20sp"
+        android:text="total=a34444444444444444"
+        android:textStyle="bold"
+        android:typeface="sans"
+        fab:layout_constraintBottom_toBottomOf="parent"
+        fab:layout_constraintStart_toStartOf="parent" />
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:theme="@style/RaisedButtonDark"
+        fab:fab_colorNormal="@color/amber900"
+        fab:fab_colorPressed="@color/colorAccent"
+        fab:fab_icon="@drawable/ic_guardar"
+        fab:fab_size="mini"
+        fab:fab_title="Guardar Pedido"
+        fab:layout_constraintBottom_toBottomOf="parent"
+        fab:layout_constraintEnd_toEndOf="parent"
+        fab:layout_constraintHorizontal_bias="0.847"
+        fab:layout_constraintStart_toEndOf="@+id/txtMonto" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

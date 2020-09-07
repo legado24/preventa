@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:theme="@style/AppTheme.MyDialog"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/primaryColor">
+
+
+        <TextView android:textAlignment="center" android:gravity="center" android:layout_gravity="center" android:layout_centerInParent="true"
+            android:layout_width="wrap_content" android:textSize="16sp" android:textStyle="bold"  android:textColor="@color/white"
+            android:layout_height="wrap_content"  android:text="ARTICULO FOCUS DEL DIA"/>
+
+    </RelativeLayout>
+
+
+    <com.legado.preventagps.util.CustomEditText
+    android:id="@+id/descArticulo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    app:errorTextAppearance="@style/error_appearance"
+    android:hint="INGRESE ARTICULO"
+    />
+    <!--<ProgressBar-->
+        <!--style="?android:attr/progressBarStyle"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:id="@+id/progressbar_loadingArticulos"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recicladorArticulo" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:padding="3dp" android:scrollbars="vertical" />
+
+
+    <TextView
+        android:id="@+id/lblPrecio"
+        android:layout_height="wrap_content" android:layout_width="match_parent"
+        android:text="Precio:"
+        />
+    <EditText
+        android:id="@+id/txtPrecio" android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <TextView
+        android:id="@+id/lblStock"
+        android:layout_height="wrap_content" android:layout_width="match_parent"
+        android:text="Stock:"
+        />
+    <EditText
+        android:id="@+id/txtStock" android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <TextView
+        android:id="@+id/lblCantidad"
+        android:layout_height="wrap_content" android:layout_width="match_parent"
+        android:text="Cantidad:"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <EditText android:id="@+id/txtCantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" android:textColor="@color/amber900"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:orientation="horizontal" android:layout_weight="2">
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="wrap_content" android:text="Agregar" android:drawableRight="@drawable/ok"
+            android:layout_height="wrap_content" android:theme="@style/RaisedButtonDark"
+             android:layout_weight="1"  />
+        <Button
+            android:id="@+id/dismiss" android:drawableRight="@drawable/cerrar"
+            android:layout_width="wrap_content" android:text="cerrar" android:theme="@style/RaisedButtonDark"
+            android:layout_height="wrap_content" android:layout_weight="1"
+              />
+    </LinearLayout>
+
+
+
+</LinearLayout>

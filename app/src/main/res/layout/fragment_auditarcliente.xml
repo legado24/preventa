@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color" >
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+
+
+                <EditText android:enabled="false"
+                    android:id="@+id/txtDescCliente"
+                    style="@style/TextInputEditTextStyle"
+                    android:theme="@style/customtheme"
+                    android:singleLine="false"  android:textSize="@dimen/sizeFormItem"
+                    />
+
+                <TextView
+                    style="@style/TextInputLayoutStyle"
+                    android:text="Descripción cliente" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/contenedorDireccionRuc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+                <EditText android:enabled="false"
+                    android:id="@+id/txtDireccionFacturacionOld"
+                    style="@style/TextInputEditTextStyle"
+                    android:singleLine="false"
+                    />
+
+                <TextView
+                    android:text="Direcc. Facturación Ruc"
+                    style="@style/TextInputLayoutStyle" />
+
+            </RelativeLayout>
+            <LinearLayout android:id="@+id/contenedorDireccionDni"
+                android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_standard_new"
+                    android:layout_marginEnd="@dimen/spacing_standard_new"
+                    android:layout_marginTop="@dimen/spacing_standard_new">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/spacing_standard"
+
+                        >
+
+                        <Spinner
+                            android:id="@+id/spinnerDirFormato1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:spinnerMode="dialog" />
+
+
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/spacing_standard"
+
+                        >
+
+                        <EditText style="@style/TextInputEditTextStyle"
+                            android:id="@+id/txtDireccion1" android:inputType="textCapSentences"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:textSize="@dimen/sizeFormItem"
+                            android:textColor="@color/tertiary"
+                            />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_standard_new"
+                    android:layout_marginEnd="@dimen/spacing_standard_new"
+                    android:layout_marginTop="@dimen/spacing_standard_new">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/spacing_standard"
+
+                        >
+
+                        <EditText
+                            android:id="@+id/txtDireccion2" android:inputType="number"
+                            style="@style/TextInputEditTextStyle"
+                            />
+
+                        <TextView
+                            android:text="NRO."
+                            style="@style/TextInputLayoutStyle" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/spacing_standard"
+
+                        >
+
+                        <EditText
+                            android:id="@+id/txtDireccion3"
+                            android:inputType="text"
+                            style="@style/TextInputEditTextStyle"
+                            />
+
+                        <TextView
+                            android:text="MZ."
+                            style="@style/TextInputLayoutStyle" />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_standard_new"
+                    android:layout_marginEnd="@dimen/spacing_standard_new"
+                    android:layout_marginTop="@dimen/spacing_standard_new">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/spacing_standard"
+
+                        >
+
+                        <EditText
+                            android:id="@+id/txtDireccion4"
+                            style="@style/TextInputEditTextStyle"
+                            />
+
+                        <TextView
+                            android:text="LT."
+                            style="@style/TextInputLayoutStyle" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/spacing_standard"
+
+                        >
+
+                        <EditText
+                            android:id="@+id/txtDireccion5"
+                            android:inputType="text"
+                            style="@style/TextInputEditTextStyle"
+                            />
+
+                        <TextView
+                            android:text="HU."
+                            style="@style/TextInputLayoutStyle" />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_standard_new"
+                    android:layout_marginEnd="@dimen/spacing_standard_new"
+                    android:layout_marginTop="@dimen/spacing_standard_new">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/spacing_standard"
+
+                        >
+
+                        <Spinner
+                            android:id="@+id/spinnerDirFormato2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/spacing_standard"
+
+                        >
+
+                        <EditText style="@style/TextInputEditTextStyle"
+                            android:id="@+id/txtDireccion6" android:inputType="textCapSentences"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:textSize="@dimen/sizeFormItem"
+                            android:textColor="@color/tertiary"
+                            />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/spacing_standard_new"-->
+<!--                android:layout_marginEnd="@dimen/spacing_standard_new"-->
+<!--                android:layout_marginTop="@dimen/spacing_standard_new">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginEnd="@dimen/spacing_standard"-->
+
+<!--                    >-->
+
+<!--                    <Spinner-->
+<!--                        android:id="@+id/spinnerDirFormato1"-->
+
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:spinnerMode="dialog" />-->
+
+
+
+
+
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginStart="@dimen/spacing_standard"-->
+
+<!--                    >-->
+
+<!--                    <EditText style="@style/TextInputEditTextStyle"-->
+<!--                        android:id="@+id/txtDireccion1" android:inputType="textCapSentences"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content" android:textSize="@dimen/sizeFormItem"-->
+<!--                        android:textColor="@color/tertiary"-->
+<!--                        />-->
+
+<!--                </RelativeLayout>-->
+
+
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/spacing_standard_new"-->
+<!--                android:layout_marginEnd="@dimen/spacing_standard_new"-->
+<!--                android:layout_marginTop="@dimen/spacing_standard_new">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginEnd="@dimen/spacing_standard"-->
+
+<!--                    >-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/txtDireccion2" android:inputType="number"-->
+<!--                        style="@style/TextInputEditTextStyle"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:text="NRO."-->
+<!--                        style="@style/TextInputLayoutStyle" />-->
+
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginStart="@dimen/spacing_standard"-->
+
+<!--                    >-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/txtDireccion3"-->
+<!--                        android:inputType="text"-->
+<!--                        style="@style/TextInputEditTextStyle"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:text="MZ."-->
+<!--                        style="@style/TextInputLayoutStyle" />-->
+
+<!--                </RelativeLayout>-->
+
+
+
+<!--            </LinearLayout>-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/spacing_standard_new"-->
+<!--                android:layout_marginEnd="@dimen/spacing_standard_new"-->
+<!--                android:layout_marginTop="@dimen/spacing_standard_new">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginEnd="@dimen/spacing_standard"-->
+
+<!--                    >-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/txtDireccion4"-->
+<!--                        style="@style/TextInputEditTextStyle"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:text="LT."-->
+<!--                        style="@style/TextInputLayoutStyle" />-->
+
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginStart="@dimen/spacing_standard"-->
+
+<!--                    >-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/txtDireccion5"-->
+<!--                        android:inputType="text"-->
+<!--                        style="@style/TextInputEditTextStyle"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:text="HU."-->
+<!--                        style="@style/TextInputLayoutStyle" />-->
+
+<!--                </RelativeLayout>-->
+
+
+
+<!--            </LinearLayout>-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/spacing_standard_new"-->
+<!--                android:layout_marginEnd="@dimen/spacing_standard_new"-->
+<!--                android:layout_marginTop="@dimen/spacing_standard_new">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginEnd="@dimen/spacing_standard"-->
+
+<!--                    >-->
+
+<!--                    <Spinner-->
+<!--                        android:id="@+id/spinnerDirFormato2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        />-->
+
+
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginStart="@dimen/spacing_standard"-->
+
+<!--                    >-->
+
+<!--                    <EditText style="@style/TextInputEditTextStyle"-->
+<!--                        android:id="@+id/txtDireccion6" android:inputType="textCapSentences"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content" android:textSize="@dimen/sizeFormItem"-->
+<!--                        android:textColor="@color/tertiary"-->
+<!--                        />-->
+
+<!--                </RelativeLayout>-->
+
+
+
+<!--            </LinearLayout>-->
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/spacing_standard"
+
+                    >
+
+                    <EditText android:maxLength="9"
+                        android:id="@+id/txtTelefono" android:inputType="number"
+                        style="@style/TextInputEditTextStyle"
+                        />
+
+                    <TextView
+                        android:text="Telefono Fijo"
+                        style="@style/TextInputLayoutStyle" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/spacing_standard"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/txtCelular"
+                        android:inputType="number"
+                        style="@style/TextInputEditTextStyle"
+                        />
+
+                    <TextView
+                        android:text="Celular"
+                        style="@style/TextInputLayoutStyle" />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new">
+
+                <EditText
+                    android:id="@+id/txtEmail" android:inputType="textEmailAddress"
+                    style="@style/TextInputEditTextStyle"
+                    android:lines="2" />
+                <TextView
+                    android:text="Email"
+                    style="@style/TextInputLayoutStyle" />
+
+            </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_standard_new"
+                    android:layout_marginEnd="@dimen/spacing_standard_new"
+                    android:layout_marginTop="@dimen/spacing_standard_new">
+
+                    >
+
+                    <Spinner
+                        android:id="@+id/spinnerGiroNegocio" android:spinnerMode="dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" style="@style/customtheme"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_standard_new"
+                    android:layout_marginEnd="@dimen/spacing_standard_new"
+                    android:layout_marginTop="@dimen/spacing_standard_new">
+
+                    >
+                    <Spinner
+                        android:id="@+id/spinnerTipoCliente"
+                        android:layout_width="match_parent" android:spinnerMode="dialog"
+                        android:layout_height="wrap_content"  style="@style/customtheme"
+                        />
+
+
+
+                </RelativeLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_16sdp"
+                android:background="@color/commonColorWhite" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_width"
+                android:background="@color/gray_btn_bg_color" />
+
+            <TextView android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/spacing_control"
+                android:paddingTop="@dimen/_16sdp"
+                android:paddingEnd="@dimen/spacing_standard_new"
+                android:text="Lista de Direcciones"
+
+                android:textColor="@color/amber900"
+                android:textSize="@dimen/font_size_micro"
+
+                android:textStyle="bold" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard" >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent" style="@style/Widget.MaterialComponents.CardView"
+                    android:layout_height="match_parent" android:layout_margin="@dimen/activity_horizontal_margin">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recicladorDirecciones"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="3dp"
+                        android:scrollbars="vertical" />
+                </androidx.cardview.widget.CardView>
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnActualizarCliente"
+                android:layout_width="match_parent"  android:textSize="@dimen/font_size_nano"
+                android:layout_height="wrap_content"
+                style="@style/MaterialButtonStyle.Filled"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:text="ACTUALIZAR CLIENTE" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

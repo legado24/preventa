@@ -1,0 +1,77 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="editTextSizeLogin">15sp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="padding_horizontal_login">10dp</dimen>
+    <dimen name="activity_vertical_margin_4">4dp</dimen>
+    <dimen name="activity_horizontal_margin_8">8dp</dimen>
+    <dimen name="activity_horizontal_margin_14">14dp</dimen>
+    <dimen name="activity_horizontal_margin_4">4dp</dimen>
+    <dimen name="activity_horizontal_margin_2">2dp</dimen>
+    <dimen name="spinner_horizontal_margin_5">5dp</dimen>
+    <dimen name="defaultHeaderHeight">72dp</dimen>
+    <dimen name="double_margin">16dp</dimen>
+    <dimen name="standard_margin">8dp</dimen>
+    <dimen name="card_padding">60dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="lb_size">14sp</dimen>
+    <dimen name="lb_size_2">14sp</dimen>
+    <dimen name="some_text_size">2dp</dimen>
+    <dimen name="separacion_label">10dp</dimen>
+    <dimen name="separacion_text">24dp</dimen>
+    <dimen name="alto_item">60dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="size_spinner">12sp</dimen>
+
+
+    <dimen name="sizeLabel">@dimen/font_size_nano</dimen>
+    <dimen name="sizeFormItem">12sp</dimen>
+
+
+    <!--genaral spacing-->
+    <dimen name="spacing_xsmall">2dp</dimen>
+    <dimen name="spacing_small">3dp</dimen>
+    <dimen name="spacing_medium">5dp</dimen>
+    <dimen name="spacing_xmedium">7dp</dimen>
+    <dimen name="spacing_middle">10dp</dimen>
+    <dimen name="spacing_large">15dp</dimen>
+    <dimen name="spacing_smlarge">18dp</dimen>
+    <dimen name="spacing_mlarge">20dp</dimen>
+    <dimen name="spacing_mxlarge">25dp</dimen>
+    <dimen name="spacing_xlarge">35dp</dimen>
+    <dimen name="spacing_xmlarge">40dp</dimen>
+    <dimen name="spacing_xxlarge">50dp</dimen>
+    <dimen name="spacing_xxxlarge">55dp</dimen>
+
+    <dimen name="spacing_control_half">@dimen/_2sdp</dimen>
+    <dimen name="spacing_control">@dimen/_4sdp</dimen>
+    <dimen name="spacing_standard">@dimen/_8sdp</dimen>
+    <dimen name="spacing_standard_new">@dimen/_16sdp</dimen>
+
+    <dimen name="stroke_width">@dimen/_1sdp</dimen>
+        <dimen name="font_size_nano">10sp</dimen>
+        <dimen name="font_size_micro">12sp</dimen>
+        <dimen name="font_size_small">14sp</dimen>
+        <dimen name="font_size_medium">16sp</dimen>
+        <dimen name="font_size_normal">18sp</dimen>
+        <dimen name="font_size_large">20sp</dimen>
+        <dimen name="font_size_xlarge">22sp</dimen>
+        <dimen name="font_size_xxlarge">26sp</dimen>
+        <dimen name="font_size_xxxlarge">30sp</dimen>
+        <dimen name="font_size_splash">40sp</dimen>
+
+
+
+        <!-- Default screen margins, per the Android Design guidelines. -->
+
+        <dimen name="nav_header_vertical_spacing">8dp</dimen>
+        <dimen name="divider_width">0.5dp</dimen>
+        <dimen name="app_bar_height">180dp</dimen>
+
+
+
+</resources>

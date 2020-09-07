@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+
+    <tab
+        id="@+id/tab_datoscliente"
+        icon="@drawable/ic_datoscliente"
+        title="DATOS GENERALES" />
+
+
+    <tab
+        id="@+id/tab_factdesp"
+        icon="@drawable/ic_subtitles"
+        title="FACT/DESP" />
+</tabs>

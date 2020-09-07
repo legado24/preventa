@@ -1,0 +1,173 @@
+<!--<android.support.design.widget.CoordinatorLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" android:fitsSystemWindows="true"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin_4"-->
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin_8"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin_8" android:layout_margin="@dimen/activity_vertical_margin_4"-->
+    <!--android:paddingTop="0dp"  android:id="@+id/coordinatorLayout">-->
+    <!--<ScrollView-->
+        <!--android:id="@+id/scrollView1"-->
+        <!--android:layout_width="match_parent" android:fitsSystemWindows="true"-->
+        <!--android:layout_height="match_parent" android:layout_marginBottom="90dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--&gt;-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<fragment-->
+                    <!--android:id="@+id/mapaCliente"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="300sp"-->
+                    <!--class="com.google.android.gms.maps.SupportMapFragment" />-->
+
+            <!--</FrameLayout>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/contenedorAddDireccion"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" android:layout_marginBottom="50sp"-->
+            <!--android:orientation="vertical">-->
+
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/lblDireccFact"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content" android:textSize="@dimen/sizeLabel"-->
+                        <!--android:text="DIRECCION:"-->
+                        <!--android:textColor="@color/oil"-->
+                        <!--android:textStyle="bold" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/txtDireccFact"-->
+                        <!--android:layout_width="match_parent" android:theme="@style/customtheme"-->
+                        <!--android:layout_height="wrap_content" android:textSize="@dimen/sizeFormItem"-->
+
+                        <!--android:textColor="@color/tertiary"-->
+                        <!--/>-->
+
+
+            <!--<LinearLayout android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" android:weightSum="2">-->
+                <!--<LinearLayout android:orientation="vertical"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" android:layout_weight="1">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/lblRuta"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="RUTA:"-->
+                        <!--android:textSize="@dimen/sizeLabel" android:textColor="@color/oil"-->
+                        <!--android:textStyle="bold"/>-->
+                    <!--&lt;!&ndash; dpto &ndash;&gt;-->
+                    <!--<Spinner-->
+                        <!--android:id="@+id/spinnerRuta" android:textSize="@dimen/sizeFormItem"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:completionThreshold="1"  />-->
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout android:orientation="vertical"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" android:layout_weight="1">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/lblCoordenadas"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="COORDENADAS:.:"  android:textColor="@color/oil"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textSize="@dimen/sizeLabel"/>-->
+                    <!--&lt;!&ndash; tipocliente &ndash;&gt;-->
+                    <!--<EditText-->
+                        <!--android:id="@+id/txtCoordenadas" android:enabled="false"-->
+                        <!--android:layout_width="match_parent"  android:completionThreshold="1"-->
+                        <!--android:layout_height="wrap_content" android:textSize="@dimen/sizeFormItem"-->
+                        <!--android:layout_gravity="center" android:theme="@style/customtheme"/>-->
+                    <!--/>-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <!--<Button android:paddingRight="20sp" android:text="Registrar Local"-->
+                <!--android:layout_width="match_parent"  android:theme="@style/RaisedButtonDark"-->
+                <!--android:layout_height="wrap_content"  />-->
+
+
+        <!--</LinearLayout>-->
+
+    <!--</ScrollView>-->
+<!--</android.support.design.widget.CoordinatorLayout>-->
+
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="10dp" xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<fragment-->
+            <!--android:id="@+id/map"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="300sp"-->
+            <!--class="com.google.android.gms.maps.SupportMapFragment" />-->
+
+    <!--</FrameLayout>-->
+    <!--<LinearLayout android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<Button android:id="@+id/btnConfirmar" android:text="Confirmar ubicacion"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent" />-->
+        <!--<Button android:text="Cerrar" android:id="@+id/btnCerrar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent" />-->
+
+    <!--</LinearLayout>-->
+
+
+<!--</LinearLayout>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <fragment
+            android:id="@+id/mapaCliente"
+            android:layout_width="match_parent"
+            android:layout_height="300sp"
+            class="com.google.android.gms.maps.SupportMapFragment" />
+
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/btnConfirmar" android:text="Confirmar ubicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button android:text="Cerrar" android:id="@+id/btnCerrar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.vendedor.MenuPreventaActivity">
+    <ScrollView
+        android:id="@+id/activity_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgapps"
+        tools:context="com.legado.preventagps.activities.vendedor.MenuPreventaActivity">
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtDashboard" android:text="PEDIDOS"
+                    android:textSize="22sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+             </RelativeLayout>
+
+            <LinearLayout  android:weightSum="1" android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/menuPedidos0"
+                        style="@style/categoriesCardViewButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_card"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp"
+                            android:weightSum="1">
+
+                            <ImageView
+                                android:id="@+id/imagen0"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/preventa" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:layout_weight="1"
+                                android:text="PEDIDO IN RUTA"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/menuPedidos1"
+                        style="@style/categoriesCardViewButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_card"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp"
+                            android:weightSum="1">
+
+                            <ImageView
+                                android:id="@+id/imagen1"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/consulta_pedidos" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:layout_weight="1"
+                                android:text="CONSULTA"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout  android:weightSum="2" android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.cardview.widget.CardView android:visibility="gone"
+                        android:id="@+id/menuPedidos2"
+                        style="@style/categoriesCardViewButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/sincronizacion" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="BANDEJA OFFLINE"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:tools="http://schemas.android.com/tools" android:layout_marginLeft="25dp"
+                            android:layout_width="wrap_content" android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imagenAlerta"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:tint="@color/material_blue_900"
+                                android:src="@drawable/circle" />
+
+                            <TextView android:textSize="12dp"
+                                android:id="@+id/txtAlerta"
+                                android:layout_width="5dp" android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/imagenAlerta"
+                                android:layout_alignRight="@+id/imagenAlerta"
+                                android:text="-"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:gravity="center"
+                                android:textColor="#fdfcfc" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/menuPedidos3" android:visibility="gone"
+                        style="@style/categoriesCardViewButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/planificador" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="PLANIFICADOR"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<android.support.v7.widget.CardView android:id="@+id/menu8" android:layout_height="wrap_content" android:clickable="true"-->
+            <!--android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:layout_width="wrap_content"  android:layout_columnWeight="1" android:layout_rowWeight="1"-->
+            <!--app:cardElevation="6dp" app:cardCornerRadius="40dp" android:layout_margin="12dp">-->
+            <!--<LinearLayout android:orientation="vertical"-->
+            <!--android:padding="16dp" android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ImageView android:id="@+id/imagen2"-->
+            <!--android:src="@drawable/bookmark"-->
+            <!--android:layout_height="60dp" android:layout_width="60dp"/>-->
+
+            <!--<TextView android:layout_marginTop="12dp"-->
+            <!--android:textColor="#6f6f6f"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="Menu1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView android:id="@+id/cardMenu3" android:layout_height="wrap_content"-->
+            <!--android:clickable="true" android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:layout_width="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1"-->
+            <!--app:cardElevation="6dp" app:cardCornerRadius="40dp" android:layout_margin="12dp">-->
+            <!--<LinearLayout android:orientation="vertical"-->
+            <!--android:padding="16dp" android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ImageView-->
+            <!--android:src="@drawable/bug"-->
+            <!--android:layout_height="60dp" android:layout_width="60dp"/>-->
+            <!--<TextView android:layout_marginTop="12dp"-->
+            <!--android:textColor="#6f6f6f"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="Menu1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView android:id="@+id/cardMenu4" android:layout_height="wrap_content"-->
+            <!--android:clickable="true" android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:layout_width="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1"-->
+            <!--app:cardElevation="6dp" app:cardCornerRadius="40dp" android:layout_margin="12dp">-->
+            <!--<LinearLayout android:orientation="vertical"-->
+            <!--android:padding="16dp" android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ImageView-->
+            <!--android:src="@drawable/bug"-->
+            <!--android:layout_height="60dp" android:layout_width="60dp"/>-->
+            <!--<TextView android:layout_marginTop="12dp"-->
+            <!--android:textColor="#6f6f6f"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="Menu1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView android:id="@+id/menu5" android:layout_height="wrap_content" android:clickable="true"-->
+            <!--android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:layout_width="wrap_content"  android:layout_columnWeight="1" android:layout_rowWeight="1"-->
+            <!--app:cardElevation="6dp" app:cardCornerRadius="40dp" android:layout_margin="12dp">-->
+            <!--<LinearLayout android:orientation="vertical"-->
+            <!--android:padding="16dp" android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ImageView android:id="@+id/imagen3"-->
+            <!--android:src="@drawable/bookmark"-->
+            <!--android:layout_height="60dp" android:layout_width="60dp"/>-->
+
+            <!--<TextView android:layout_marginTop="12dp"-->
+            <!--android:textColor="#6f6f6f"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="Menu1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView android:id="@+id/cardMenu6" android:layout_height="wrap_content"-->
+            <!--android:clickable="true" android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:layout_width="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1"-->
+            <!--app:cardElevation="6dp" app:cardCornerRadius="40dp" android:layout_margin="12dp">-->
+            <!--<LinearLayout android:orientation="vertical"-->
+            <!--android:padding="16dp" android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ImageView-->
+            <!--android:src="@drawable/bug"-->
+            <!--android:layout_height="60dp" android:layout_width="60dp"/>-->
+            <!--<TextView android:layout_marginTop="12dp"-->
+            <!--android:textColor="#6f6f6f"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="Menu1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView android:id="@+id/cardMenu7" android:layout_height="wrap_content"-->
+            <!--android:clickable="true" android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:layout_width="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1"-->
+            <!--app:cardElevation="6dp" app:cardCornerRadius="40dp" android:layout_margin="12dp">-->
+            <!--<LinearLayout android:orientation="vertical"-->
+            <!--android:padding="16dp" android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ImageView-->
+            <!--android:src="@drawable/bug"-->
+            <!--android:layout_height="60dp" android:layout_width="60dp"/>-->
+            <!--<TextView android:layout_marginTop="12dp"-->
+            <!--android:textColor="#6f6f6f"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="Menu1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView android:layout_height="wrap_content"-->
+            <!--android:clickable="true" android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:layout_width="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1"-->
+            <!--app:cardElevation="6dp" app:cardCornerRadius="12dp" android:layout_margin="12dp">-->
+            <!--<LinearLayout android:orientation="vertical"-->
+            <!--android:padding="16dp" android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ImageView-->
+            <!--android:src="@drawable/bitcoin"-->
+            <!--android:layout_height="80dp" android:layout_width="80dp"/>-->
+            <!--<TextView android:layout_marginTop="12dp"-->
+            <!--android:textColor="#6f6f6f"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="Menu1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView android:layout_height="wrap_content"-->
+            <!--android:clickable="true" android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:layout_width="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1"-->
+            <!--app:cardElevation="6dp" app:cardCornerRadius="12dp" android:layout_margin="12dp">-->
+            <!--<LinearLayout android:orientation="vertical"-->
+            <!--android:padding="16dp" android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ImageView-->
+            <!--android:src="@drawable/contact"-->
+            <!--android:layout_height="80dp" android:layout_width="80dp"/>-->
+            <!--<TextView android:layout_marginTop="12dp"-->
+            <!--android:textColor="#6f6f6f"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="Menu1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView android:layout_height="wrap_content"-->
+            <!--android:clickable="true" android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:layout_width="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1"-->
+            <!--app:cardElevation="6dp" app:cardCornerRadius="12dp" android:layout_margin="12dp">-->
+            <!--<LinearLayout android:orientation="vertical"-->
+            <!--android:padding="16dp" android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ImageView-->
+            <!--android:src="@drawable/date"-->
+            <!--android:layout_height="80dp" android:layout_width="80dp"/>-->
+            <!--<TextView android:layout_marginTop="12dp"-->
+            <!--android:textColor="#6f6f6f"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="Menu1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView android:layout_height="wrap_content"-->
+            <!--android:clickable="true" android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:layout_width="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1"-->
+            <!--app:cardElevation="6dp" app:cardCornerRadius="12dp" android:layout_margin="12dp">-->
+            <!--<LinearLayout android:orientation="vertical"-->
+            <!--android:padding="16dp" android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ImageView-->
+            <!--android:src="@drawable/bookmark"-->
+            <!--android:layout_height="80dp" android:layout_width="80dp"/>-->
+            <!--<TextView android:layout_marginTop="12dp"-->
+            <!--android:textColor="#6f6f6f"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="Menu1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView android:layout_height="wrap_content"-->
+            <!--android:clickable="true" android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:layout_width="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1"-->
+            <!--app:cardElevation="6dp" app:cardCornerRadius="12dp" android:layout_margin="12dp">-->
+            <!--<LinearLayout android:orientation="vertical"-->
+            <!--android:padding="16dp" android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ImageView-->
+            <!--android:src="@drawable/bookmark"-->
+            <!--android:layout_height="80dp" android:layout_width="80dp"/>-->
+            <!--<TextView android:layout_marginTop="12dp"-->
+            <!--android:textColor="#6f6f6f"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="Menu1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView android:layout_height="wrap_content"-->
+            <!--android:clickable="true" android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:layout_width="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1"-->
+            <!--app:cardElevation="6dp" app:cardCornerRadius="12dp" android:layout_margin="12dp">-->
+            <!--<LinearLayout android:orientation="vertical"-->
+            <!--android:padding="16dp" android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ImageView-->
+            <!--android:src="@drawable/bookmark"-->
+            <!--android:layout_height="80dp" android:layout_width="80dp"/>-->
+            <!--<TextView android:layout_marginTop="12dp"-->
+            <!--android:textColor="#6f6f6f"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="Menu1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView android:layout_height="wrap_content"-->
+            <!--android:clickable="true" android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:layout_width="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1"-->
+            <!--app:cardElevation="6dp" app:cardCornerRadius="12dp" android:layout_margin="12dp">-->
+            <!--<LinearLayout android:orientation="vertical"-->
+            <!--android:padding="16dp" android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ImageView-->
+            <!--android:src="@drawable/bookmark"-->
+            <!--android:layout_height="80dp" android:layout_width="80dp"/>-->
+            <!--<TextView android:layout_marginTop="12dp"-->
+            <!--android:textColor="#6f6f6f"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="Menu1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView android:layout_height="wrap_content"-->
+            <!--android:clickable="true" android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:layout_width="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1"-->
+            <!--app:cardElevation="6dp" app:cardCornerRadius="12dp" android:layout_margin="12dp">-->
+            <!--<LinearLayout android:orientation="vertical"-->
+            <!--android:padding="16dp" android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ImageView-->
+            <!--android:src="@drawable/bookmark"-->
+            <!--android:layout_height="80dp" android:layout_width="80dp"/>-->
+            <!--<TextView android:layout_marginTop="12dp"-->
+            <!--android:textColor="#6f6f6f"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="Menu1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView android:layout_height="wrap_content"-->
+            <!--android:clickable="true" android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:layout_width="wrap_content" android:layout_columnWeight="1" android:layout_rowWeight="1"-->
+            <!--app:cardElevation="6dp" app:cardCornerRadius="12dp" android:layout_margin="12dp">-->
+            <!--<LinearLayout android:orientation="vertical"-->
+            <!--android:padding="16dp" android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ImageView-->
+            <!--android:src="@drawable/bookmark"-->
+            <!--android:layout_height="80dp" android:layout_width="80dp"/>-->
+            <!--<TextView android:layout_marginTop="12dp"-->
+            <!--android:textColor="#6f6f6f"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="Menu1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+
+
+            <!--</GridLayout>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

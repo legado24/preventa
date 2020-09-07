@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"  >
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"    android:layout_weight="0.5">
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal" >
+            <TextView
+                android:text="Cod. Item:"  android:layout_height="wrap_content"
+                android:layout_width="wrap_content"  />
+            <TextView
+                android:id="@+id/codItem"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                android:textStyle="bold"  />
+
+        </LinearLayout>
+         <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Desc. Item:" />
+
+            <TextView
+                android:id="@+id/descItem"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="UM:" />
+
+            <TextView
+                android:id="@+id/um"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Cantidad:" />
+
+            <TextView
+                android:id="@+id/cantidad"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Venta Neta:" />
+
+            <TextView
+                android:id="@+id/ventaNeta"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+
+                android:textStyle="bold" />
+
+
+
+
+            <!--android:textColor="@color/colorPrimary"-->
+
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal" >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Stock:" />
+
+            <TextView
+                android:id="@+id/stock"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+
+                android:textStyle="bold" />
+
+
+
+
+            <!--android:textColor="@color/colorPrimary"-->
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+
+    <tab
+        id="@+id/tab_datos"
+        icon="@drawable/ic_datoscliente"
+        title="DATOS CLIENTE" />
+
+    <tab
+        id="@+id/tab_preventa"
+        icon="@drawable/ic_preventa"  title="PREVENTA" />
+    <tab
+        id="@+id/tab_cobranza"
+        icon="@drawable/ic_cobranza"
+        title="COBRANZA" />
+</tabs>
